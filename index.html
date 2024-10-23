@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Air Quality Index (AQI)</title>
+        <link rel="stylesheet" type="text/css" href="../AQI Index/Aqiindex.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="titles">
+        <h1 id="title">Air Quality Index (AQI) Checker</h1>
+        <h3 id="sub-title">Get an aware about the air you breathe every second...</h3>
+    <hr></div>
+        <div id="input-section">
+            <input type="text" id="input-city" placeholder="Enter city name">
+            <button id="search-btn"><i class="bi bi-search"></i></button>
+        </div>
+        <hr>
+        <div id="aqi">
+            <div id="overall-aqi">
+            <p id="actual-aqi">AIR QUALITY INDEX </p>
+            <p id="condition"></p>
+            </div>
+        <div id="about-gases">
+            <table>
+                <tr>
+                    <th>GASES</th>
+                    <td>AQI</td>
+                    <td>CONC</td>
+                </tr>
+                <tr>
+                    <th>CO</th>
+                    <td id="co-aqi"></td>
+                    <td id="co-conc"></td>
+                </tr>
+                <tr>
+                    <th>NO2</th>
+                    <td id="no-aqi"></td>
+                    <td id="no-conc"></td>
+                </tr>
+                <tr>
+                    <th>O3</th>
+                    <td id="o-aqi"></td>
+                    <td id="o-conc"></td>
+                </tr>
+                <tr>
+                    <th>PM2.5</th>
+                    <td id="pm-aqi1"></td>
+                    <td id="pm-conc1"></td>
+                </tr>
+                <tr>
+                    <th>PM10</th>
+                    <td id="pm-aqi2"></td>
+                    <td id="pm-conc2"></td>
+                </tr>
+                <tr>
+                    <th>SO2</th>
+                    <td id="so-aqi"></td>
+                    <td id="so-conc"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <script src="../AQI Index/Aqiindex.js"></script>
+    </body>
+</html>
