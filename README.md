@@ -1,1 +1,1 @@
-Project Link - aqi-repository.vercel.app
+Project Link - https://aqi-repository.vercel.app/
