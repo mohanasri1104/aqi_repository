@@ -44,7 +44,6 @@ searchBtn.addEventListener("click", () => {
 })
 
 function updateAQI(response){
-    console.log(response)
     //selecting all the components required for updation
     const coAqi = document.getElementById("co-aqi")
     const noAqi = document.getElementById("no-aqi")
@@ -83,7 +82,7 @@ function updateAQI(response){
 
     //setting the values for overall aqi
     let overallAqi = response['overall_aqi']
-    actualAqi.innerText += ` : ${overallAqi}`
+    actualAqi.innerText = `AIR QUALITY INDEX : ${overallAqi}`
     if(overallAqi > 0 && overallAqi <= 50){
         condition.innerText = "GOOD"
         condition.style.backgroundColor = "#61dd61"
