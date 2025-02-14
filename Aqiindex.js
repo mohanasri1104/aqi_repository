@@ -36,7 +36,11 @@ searchBtn.addEventListener("click", () => {
             updateAQI(response)
         }
         )
-        .catch((error) => console.error(error))
+        .catch((error) => {
+            city.value = "City not found, Enter a valid city name"
+            const aqi = document.getElementById("aqi")
+            aqi.style.display = "none"
+        })
     }
 
     callAqi();
@@ -44,6 +48,7 @@ searchBtn.addEventListener("click", () => {
 })
 
 function updateAQI(response){
+    console.log(response)
     //selecting all the components required for updation
     const coAqi = document.getElementById("co-aqi")
     const noAqi = document.getElementById("no-aqi")
